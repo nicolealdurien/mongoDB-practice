@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhost:27017/listdb', {useNewUrlParser: true, use
     if(error) {
         console.log('Unable to connect to DB')
     } else {
-        console.log('Connected to DB!')
+        console.log('Connected to listdb!')
     }
 })
 
@@ -36,7 +36,7 @@ serverapp.post('/api/lists', async (req, res) => {
 
     const listName = req.body.listName
     const listDescription = req.body.listDescription
-
+    
     let List = new List({
         listName: listName,
         listDescription: listDescription

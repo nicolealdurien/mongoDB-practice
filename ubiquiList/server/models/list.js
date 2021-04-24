@@ -1,6 +1,7 @@
 let mongoose = require('mongoose');
 // let ListItem = require('./listItem')
 
+
 let listSchema = mongoose.Schema({
     listName: String,
     listDescription: String,
